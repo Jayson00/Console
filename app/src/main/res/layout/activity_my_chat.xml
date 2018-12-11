@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#cdcdcd"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#cd0000"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="123456"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:id="@+id/tv_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/list_chat"
+        android:divider="@null"
+        android:transcriptMode="alwaysScroll"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"/>
+    <LinearLayout
+        android:id="@+id/lv_input"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_chat_input"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="发送"
+            android:id="@+id/btn_chat_commit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/ic_add"
+            android:id="@+id/iv_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/lv_more_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:src="@mipmap/ic_voice"
+            android:id="@+id/iv_voice"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@mipmap/ic_video"
+            android:id="@+id/iv_video"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@mipmap/ic_file"
+            android:id="@+id/iv_file"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

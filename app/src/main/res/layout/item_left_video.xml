@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:text="当前时间"
+        android:textAlignment="center"
+        android:id="@+id/tv_show_time"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/tv_show_time"
+        android:id="@+id/rl_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/test_boy"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_left_video"
+                android:gravity="center"
+                android:background="@mipmap/ic_chat_video"
+                android:layout_width="120dp"
+                android:layout_height="140dp" >
+                <VideoView
+                    android:clickable="false"
+                    android:id="@+id/vv_left_chat_video_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
